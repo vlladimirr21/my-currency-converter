@@ -1,17 +1,108 @@
-/* Global styles */
-
-* {
-  box-sizing: border-box;
+/* body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background-color: #f9f9f9;
+button:hover {
+  background-color: #337ab7;
+  color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(2px);
+}
+
+button:hover {
+  animation: bounce 0.2s ease-out forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
   color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 a {
@@ -27,8 +118,6 @@ a:hover {
 a:visited {
   color: #666;
 }
-
-/* Form styles */
 
 form {
   max-width: 400px;
@@ -86,7 +175,126 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Currency converter styles */
+.currency-converter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.currency-converter label {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.currency-converter input[type='number'] {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.currency-converter select {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.result span {
+  color: #337ab7;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #23527c;
+}
+
+a:visited {
+  color: #666;
+}
+
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+input[type='number'] {
+  width: 50%;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
 
 .currency-converter {
   display: flex;
@@ -110,7 +318,58 @@ button:disabled {
   margin-right: 10px;
 }
 
-/* Result styles */
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.result span {
+  color: #337ab7;
+} */
+/* Currency Converter Styles */
+
+.currency-converter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.currency-converter label {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.currency-converter input[type='number'] {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.currency-converter select {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.currency-converter button {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.currency-converter button:hover {
+  background-color: #23527c;
+}
+
+.currency-converter button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
 
 .result {
   font-size: 24px;
@@ -121,67 +380,3 @@ button:disabled {
 .result span {
   color: #337ab7;
 }
-
-/* html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	color: #333;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
-}
-
-label {
-	display: block;
-}
-
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-}
-
-input:disabled {
-	color: #ccc;
-}
-
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:disabled {
-	color: #999;
-}
-
-button:not(:disabled):active {
-	background-color: #ddd;
-}
-
-button:focus {
-	border-color: #666;
-} */
